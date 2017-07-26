@@ -49,14 +49,6 @@ $usa-btn-big-width:     11.6rem;
     }
   }
 
-  .usa-search-submit-text {
-    display: none;
-
-    @include media($small-screen) {
-      display: block;
-    }
-  }
-
   &.usa-search-big {
     @include media($small-screen) {
       $height: 4.4rem;
@@ -102,5 +94,14 @@ $usa-btn-big-width:     11.6rem;
         position: relative;
       }
     }
+  }
+}
+
+.usa-search-submit-text {
+  @include sr-only;
+
+  @include media($small-screen) {
+    left: 0;
+    position: static;
   }
 }
