@@ -17,7 +17,7 @@ $usa-btn-big-width:     11.6rem;
   [type=search],
   .usa-search-input {
     @include padding(0 null);
-    -webkit-appearance: none;
+    appearance: none;
     border-bottom-right-radius: 0;
     border-right: none;
     border-top-right-radius: 0;
